@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-hnb-hr",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Croatian National Bank (Hrvatska narodna banka, HNB) exchange-rate MCP. Keyless.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-0fd9b00b3ec67e6f9adcfbf43b49c9b09f444940702b4baa0df0bc34f722f063",
-    "sourceCommit": "1064560fd9dcd0d6fc2606298c2ba244b3a1fbeb"
+    "sourceHash": "v1-c8e00acb965aa40b37f696aab66009ff1f915fe3b69c743f5641e08f7298bea0",
+    "sourceCommit": "24e32b525f9c0b2fd7d94b519b08abb108cc11cd"
   }
 }
