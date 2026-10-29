@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-hnb-hr",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "Croatian National Bank (Hrvatska narodna banka, HNB) exchange-rate MCP. Keyless.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-hnb-hr": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "hnb-hr"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-hnb-hr.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/hnb-hr",
   "pipeworx": {
-    "sourceHash": "v1-c8e00acb965aa40b37f696aab66009ff1f915fe3b69c743f5641e08f7298bea0",
-    "sourceCommit": "24e32b525f9c0b2fd7d94b519b08abb108cc11cd"
+    "mode": "gateway",
+    "slug": "hnb-hr",
+    "gatewaySlug": "hnb-hr",
+    "sourceHash": "v1-214c884f47bf41a636f3d6c7efb40895811fd1c4a86f53da6beddbc266a23c75",
+    "sourceCommit": "4844029e402d6bd2fe735add8abf6d46735f8ed5"
   }
 }
